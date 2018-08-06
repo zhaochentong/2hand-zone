@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2handzone</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!--top-->
+	<!-- <div class="top"></div> -->
+	<!--页头-->
+	<div class="header" id="header">
+		<!--logo-->
+		<a href="file:///D:/software/sublime/2handzone/2handzone.html"><img src="img/logo.png"></a>
+		<!--导航栏-->
+		<span class="li"><a href="" class="header_focus">首页</a></span>
+		<span class="li"><a href="file:///D:/software/sublime/2handzone/trading.html">跳蚤市场</a></span>
+		<span class="li"><a href="file:///D:/software/sublime/2handzone/wechat%20business.html">生活服务</a></span>
+		<span class="li"><a href="file:///D:/software/sublime/2handzone/post.html">发布闲置</a></span>
+		<!--登录注册按钮-->
+		<span class="regeLink links" id="regeLink"><a href="###">注册</a></span>
+		<span class="loginLink links" id="loginLink"><a href="###">登录</a></span>
+		<!--中英切换按钮-->
+		<span class="Ch links" id="Ch"><a href="###">中文</a></span>
+		<span class="space links" id="Ch"><a href="###">|</a></span>
+		<span class="Eng links" id="Eng"><a href="###">English</a></span>
+	</div>
+	
+	<!--登陆注册弹出层遮罩层-->
+	<div class="layer-mask" id="layer-mask"></div>
+	<!--弹出层窗体-->
+	<div class="layer-pop" id="layer-pop">
+		
+		<!--窗体关闭按钮-->
+		<a href="" class="layer-close">×</a>
+
+		<!--登陆弹出窗体-->
+		<div class="layer-content" id="layer-content"></div>
+
+		<!--登录窗体Html-->
+		<div class="loginHtml" id="loginHtml">
+			<h2>登 录</h2>
+
+			<div class="item">
+				<label>帐号</label>
+				<input type="text" name="account" class="input" id="account">
+			</div>
+			<div class="item">
+				<label>密码</label>
+				<input type="text" name="password" class="input" id="password">
+			</div>
+			<div class="item">
+				<label>&nbsp;</label>
+				<input type="submit" name="submit" class="submit" id="loginSubmitBtn" value="提交">
+			</div>
+			
+			<div class="notif">第三方帐号登录</div>
+				<div class="weibo"><img src="img/weibo.jpg"></div>
+				<div class="weixin"><img src="img/weixin.jpg"></div>
+				<div class="qq"><img src="img/qq.jpg"></div>
+		</div>
+
+		<!--注册窗体Html-->
+		<div class="regeHtml" id="regeHtml">
+			<h2>注 册</h2>
+
+			<div class="item">
+				<label>帐号</label>
+				<input type="text" name="account" class="input" id="account">
+			</div>
+			<div class="item">
+				<label>密码</label>
+				<input type="text" name="password" class="input" id="password">
+			</div>
+			<div class="item">
+				<label>确认密码</label>
+				<input type="text" name="password" class="input" id="password">
+			</div>
+			<div class="item">
+				<label>&nbsp;</label>
+				<input type="submit" name="submit" class="submit" id="loginSubmitBtn" value="填写好了">
+			</div>
+			<div class="notif">第三方帐号登录</div>
+				<div class="weibo"><img src="img/weibo.jpg"></div>
+				<div class="weixin"><img src="img/weixin.jpg"></div>
+				<div class="qq"><img src="img/qq.jpg"></div>
+		</div>
+
+	</div>
+
+	<!--主体-->
+	<div class="main" id="main">
+
+		<!--搜索框-->
+		<div class="search" id="search">
+			<input type="text" class="searchText">
+			<input type="button" class="searchBtn" value="搜索">
+		</div>
+
+		<div class="banner" id="banner">
+			<!--导航栏半透明色块-->
+			<div class="menu-box" id="menu-box"></div>
+			<!--导航栏-->
+			<div class="menu" id="menu">
+				<div class="sub-menu">
+					<a href="">数码娱乐</a>
+				</div>
+				<div class="sub-menu">
+					<a href="">家居日用</a>
+				</div>
+				<div class="sub-menu">
+					<a href="">服饰箱包</a>
+				</div>
+				<div class="sub-menu">
+					<a href="">运动户外</a>
+				</div>
+			</div>
+
+			<!--子目录-->
+			<!--子目录内容-->
+			<div class="side-menu" id="side-menu">
+				<!--空白页面-->
+				<div class="side-menu-content" id="side-menu-content"></div>
+				<!--数码娱乐子目录-->
+				<div class="sub-side-menu sub-side-menu1">
+					<div class="title title1">手机</div>
+					<span>iphone</span>
+					<span>huawei</span>
+					<span>mi</span>
+					<span>手机配件</span>
+
+					<div class="title title2">电脑</div>
+					<span>pc</span>
+					<span>pad</span>
+					<span>台式机</span>
+					<span>电脑配件</span>
+
+					<div class="title title3">数码</div>
+					<span>游戏</span>
+					<span>相机</span>
+					<span>无人机</span>
+					<span>智能设备</span>
+				</div>
+
+				<!--家居日用子目录-->
+				<div class="sub-side-menu sub-side-menu2">
+					<div class="title title1">家具</div>
+					<span>桌椅</span>
+					<span>收纳</span>
+					<span>家电</span>
+					<span>灯具</span>
+
+					<div class="title title2">日用品</div>
+					<span>美妆</span>
+					<span>床上用品</span>
+					<span>厨具</span>
+					<span>清洁</span>
+
+					<div class="title title3">办公用品</div>
+					<span>文具</span>
+					<span>书籍</span>
+					<span>办公设施</span>
+					<span>学习资料</span>
+				</div>
+
+				<!--服饰箱包子目录-->
+				<div class="sub-side-menu sub-side-menu3">
+					<div class="title title1">女装</div>
+					<span>裙子</span>
+					<span>上装</span>
+					<span>裤子</span>
+					<span>鞋子</span>
+
+					<div class="title title2">男装</div>
+					<span>上装</span>
+					<span>裤子</span>
+					<span>鞋子</span>
+
+					<div class="title title2">箱包</div>
+					<span>双肩包</span>
+					<span>单肩包</span>
+					<span>旅行箱</span>
+					<span>钱包</span>
+				</div>
+				
+				<!--运动户外子目录-->
+				<div class="sub-side-menu sub-side-menu4">
+					<div class="title title1">运动</div>
+					<span>球类</span>
+					<span>运动套装</span>
+					<span>潮鞋</span>
+
+					<div class="title title2">健身</div>
+					<span>健身装备</span>
+					<span>健身器材</span>
+
+					<div class="title title2">户外</div>
+					<span>户外装备</span>
+					<span>自行车</span>
+					<span>帐篷</span>
+					<span>钓鱼渔具</span>
+				</div>
+			</div>
+						
+			<!--轮播图-->
+			<div class="banner-slide" id="banner-slide">
+				<!--轮播图图片-->
+				<a href="">
+					<div class="sub-banner-slide slide1"></div>
+				</a>
+				<a href="">
+					<div class="sub-banner-slide slide2"></div>
+				</a>
+				<a href="">
+					<div class="sub-banner-slide slide3"></div>
+				</a>
+			</div>
+
+			<!--圆点-->
+			<div class="dots" id="dots">
+				<span class="active"></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<!--前后按钮-->
+			<a href="javascript:void(0)" class="button prev" id="prev"></a>
+			<a href="javascript:void(0)" class="button next" id="next"></a>
+		</div>
+	</div>
+	<!--页脚-->
+	<div class="footer" id="footer">Copyright © 2018.5.31 2HandZone All rights reserved.</div>
+
+	<script src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

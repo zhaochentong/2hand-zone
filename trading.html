@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wechat business</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/trading.css">
+	<link rel="stylesheet" type="text/css" href="css/wechatBusiness.css">
+</head>
+<body>
+	<!--top-->
+	<!-- <div class="top"></div> -->
+	<!--页头-->
+	<div class="header" id="header">
+		<!--logo-->
+		<a href="file:///D:/software/sublime/2handzone/2handzone.html" target="_blank"><img src="img/logo.png"></a>
+		<!--导航栏-->
+		<span class="li"><a href="file:///D:/software/sublime/2handzone/2handzone.html">首页</a></span>
+		<span class="li"><a href=""class="header_focus">跳蚤市场</a></span>
+		<span class="li"><a href="file:///D:/software/sublime/2handzone/wechat%20business.html">生活服务</a></span>
+		<span class="li"><a href="file:///D:/software/sublime/2handzone/post.html">发布闲置</a></span>
+		<!--登录注册按钮-->
+		<span class="regeLink links" id="regeLink"><a href="###">注册</a></span>
+		<span class="loginLink links" id="loginLink"><a href="###">登录</a></span>
+		<!--中英切换按钮-->
+		<span class="Ch links" id="Ch"><a href="###">中文</a></span>
+		<span class="space links" id="Ch"><a href="###">|</a></span>
+		<span class="Eng links" id="Eng"><a href="###">English</a></span>
+	</div>
+	
+	<!--登陆注册弹出层遮罩层-->
+	<div class="layer-mask" id="layer-mask"></div>
+	<!--弹出层窗体-->
+	<div class="layer-pop" id="layer-pop">
+		
+		<!--窗体关闭按钮-->
+		<a href="" class="layer-close">×</a>
+
+		<!--登陆弹出窗体-->
+		<div class="layer-content" id="layer-content"></div>
+
+		<!--登录窗体Html-->
+		<div class="loginHtml" id="loginHtml">
+			<h2>登 录</h2>
+
+			<div class="item">
+				<label>帐号</label>
+				<input type="text" name="account" class="input" id="account">
+			</div>
+			<div class="item">
+				<label>密码</label>
+				<input type="text" name="password" class="input" id="password">
+			</div>
+			<div class="item">
+				<label>&nbsp;</label>
+				<input type="submit" name="submit" class="submit" id="loginSubmitBtn" value="提交">
+			</div>
+			
+			<div class="notif">第三方帐号登录</div>
+				<div class="weibo"><img src="img/weibo.jpg"></div>
+				<div class="weixin"><img src="img/weixin.jpg"></div>
+				<div class="qq"><img src="img/qq.jpg"></div>
+		</div>
+
+		<!--注册窗体Html-->
+		<div class="regeHtml" id="regeHtml">
+			<h2>注 册</h2>
+
+			<div class="item">
+				<label>帐号</label>
+				<input type="text" name="account" class="input" id="account">
+			</div>
+			<div class="item">
+				<label>密码</label>
+				<input type="text" name="password" class="input" id="password">
+			</div>
+			<div class="item">
+				<label>确认密码</label>
+				<input type="text" name="password" class="input" id="password">
+			</div>
+			<div class="item">
+				<label>&nbsp;</label>
+				<input type="submit" name="submit" class="submit" id="loginSubmitBtn" value="填写好了">
+			</div>
+			<div class="notif">第三方帐号登录</div>
+				<div class="weibo"><img src="img/weibo.jpg"></div>
+				<div class="weixin"><img src="img/weixin.jpg"></div>
+				<div class="qq"><img src="img/qq.jpg"></div>
+		</div>
+
+	</div>
+
+	<!--主体-->
+	<div class="main">
+		<!--buy&sell button-->
+		<div class="button_content">
+			<div class="buy_sell_button buy_button"><div class="big_letter">BUY</div><div class="small_letter">I want to buy 2-hand stuff here</div><div class="ani a"></div><div class="ani b"></div><div class="ani c"></div><div class="ani d"></div></div>
+			<div class="buy_sell_button sell_button"><div class="big_letter">SELL</div><div class="small_letter">I have 2-hand stuff to sell</div><div class="ani a"></div><div class="ani b"></div><div class="ani c"></div><div class="ani d"></div></div>
+		</div>
+		<div class="trading_search">
+			<input type="text" name="">
+			<div class="trading_search_btn">搜&nbsp;索</div>
+		</div>
+		<!--nav-lise-->
+		<div class="nav">
+			<div class="nav_item1 nav_item">
+				<a href="###" class="item_text1">数&nbsp;码&nbsp;娱&nbsp;乐</a>
+				<!--动态效果线条-->
+				<div class="bottom_line1"></div>
+				<div class="bottom_line2"></div>
+				<div class="bottom_line3"></div>
+				<div class="bottom_line4"></div>
+				<div class="bottom_line5"></div>
+				<!--子目录-->
+				<div class="sub_nav_item1 sub_nav_item">
+					<span class="main_text">手机</span>
+					<span class="main_text">电脑</span>
+					<span class="main_text">数码</span>
+					<span class="sub_text">iphone</span>
+					<span class="sub_text">huawei</span>
+					<span class="sub_text">macbook</span>
+					<span class="sub_text">gta5</span>
+					<span class="sub_text">游戏本</span>
+				</div>
+			</div>
+			<div class="nav_item2 nav_item">
+				<a href="###" class="item_text2">家&nbsp;居&nbsp;日&nbsp;用</a>
+				<div class="bottom_line1"></div>
+				<div class="bottom_line2"></div>
+				<div class="bottom_line3"></div>
+				<div class="bottom_line4"></div>
+				<div class="bottom_line5"></div>
+				<!--子目录-->
+				<div class="sub_nav_item2 sub_nav_item">
+					<span class="main_text">家具</span>
+					<span class="main_text">日用品</span>
+					<span class="main_text">办公用品</span>
+					<span class="sub_text">美妆</span>
+					<span class="sub_text">家电</span>
+					<span class="sub_text">书籍</span>
+					<span class="sub_text">清洁</span>
+					<span class="sub_text">收纳</span>
+				</div>
+			</div>
+			<div class="nav_item3 nav_item">
+				<a href="###" class="item_text3">服&nbsp;饰&nbsp;箱&nbsp;包</a>
+				<div class="bottom_line1"></div>
+				<div class="bottom_line2"></div>
+				<div class="bottom_line3"></div>
+				<div class="bottom_line4"></div>
+				<div class="bottom_line5"></div>
+				<!--子目录-->
+				<div class="sub_nav_item3 sub_nav_item">
+					<span class="main_text">女装</span>
+					<span class="main_text">男装</span>
+					<span class="main_text">箱包</span>
+					<span class="sub_text">裙子</span>
+					<span class="sub_text">包包</span>
+					<span class="sub_text">衬衫</span>
+					<span class="sub_text">正装</span>
+					<span class="sub_text">鞋</span>
+				</div>
+			</div>
+			<div class="nav_item4 nav_item">
+				<a href="###" class="item_text4">运&nbsp;动&nbsp;户&nbsp;外</a>
+				<div class="bottom_line1"></div>
+				<div class="bottom_line2"></div>
+				<div class="bottom_line3"></div>
+				<div class="bottom_line4"></div>
+				<div class="bottom_line5"></div>
+				<!--子目录-->
+				<div class="sub_nav_item4 sub_nav_item">
+					<span class="main_text">运动</span>
+					<span class="main_text">健身</span>
+					<span class="main_text">户外</span>
+					<span class="sub_text">运动套装</span>
+					<span class="sub_text">哑铃</span>
+					<span class="sub_text">蛋白粉</span>
+					<span class="sub_text">自行车</span>
+					<span class="sub_text">运动鞋</span>
+				</div>
+			</div>
+		</div>
+		<!--buy-zone-->
+		<div class="buy_zone">
+			<div class="buy_zone_tag">Buy Zone</div>
+			<div class="more_tag"><a href="###">more&nbsp;>></a></div>
+			<div class="buy_zone_content">
+				<div class="buy_zone_item">
+					<img src="img/iphone.jpg">
+					<div class="item_title">IphoneX</div>
+					<div class="item_price">￥4500</div>
+					<div class="item_info">
+					&nbsp;&nbsp;3月份京东上苹果专营店购买，8成新，无损坏，包邮</div>
+					<div class="item_location">上海</div>
+				</div>
+				<div class="buy_zone_item">
+					<img src="img/iphone.jpg">
+					<div class="item_title">IphoneX</div>
+					<div class="item_price">￥4500</div>
+					<div class="item_info">
+					&nbsp;&nbsp;3月份京东上苹果专营店购买，8成新，无损坏，包邮</div>
+					<div class="item_location">上海</div>
+				</div>
+				<div class="buy_zone_item">
+					<img src="img/iphone.jpg">
+					<div class="item_title">IphoneX</div>
+					<div class="item_price">￥4500</div>
+					<div class="item_info">
+					&nbsp;&nbsp;3月份京东上苹果专营店购买，8成新，无损坏，包邮</div>
+					<div class="item_location">上海</div>
+				</div>
+			</div>
+			<!--buy zone分页-->
+			<div class="pagination wrap">
+				<div class="pagination_wrap">
+					<a href="#" class="firstPage">First</a>
+					<a href="#" class="prevPage"></a>
+
+					<span class="page-wrap">
+						<a href="#" class="page_item">1</a>
+						<a href="#" class="page_item">2</a>
+						<a href="#" class="page_item">3</a>
+					</span>
+				
+					<a href="#" class="nextPage"></a>
+					<a href="#" class="lastPage">Last</a>
+					<span class="goto">
+						<input type="text" class="page_number">
+						<input type="button" class="go_btn" value="Go">
+					</span>
+				</div>
+			</div>		
+		</div>
+		<!--sell-zone-->
+		<div class="sell_zone">
+			<div class="sell_zone_tag">Sell Zone</div>
+			<div class="more_tag"><a href="###">more&nbsp;>></a></div>
+			<div class="sell_zone_content">
+				<div class="buy_zone_item">
+					<img src="img/iphone.jpg">
+					<div class="item_title">IphoneX</div>
+					<div class="item_price">￥4500</div>
+					<div class="item_info">
+					&nbsp;&nbsp;3月份京东上苹果专营店购买，8成新，无损坏，包邮</div>
+					<div class="item_location">上海</div>
+				</div>
+				<div class="buy_zone_item">
+					<img src="img/iphone.jpg">
+					<div class="item_title">IphoneX</div>
+					<div class="item_price">￥4500</div>
+					<div class="item_info">
+					&nbsp;&nbsp;3月份京东上苹果专营店购买，8成新，无损坏，包邮</div>
+					<div class="item_location">上海</div>
+				</div>
+				<div class="buy_zone_item">
+					<img src="img/iphone.jpg">
+					<div class="item_title">IphoneX</div>
+					<div class="item_price">￥4500</div>
+					<div class="item_info">
+					&nbsp;&nbsp;3月份京东上苹果专营店购买，8成新，无损坏，包邮</div>	
+					<div class="item_location">上海</div>
+				</div>
+				<div class="buy_zone_item">
+					<img src="img/iphone.jpg">
+					<div class="item_title">IphoneX</div>
+					<div class="item_price">￥4500</div>					
+					<div class="item_info">
+					&nbsp;&nbsp;3月份京东上苹果专营店购买，8成新，无损坏，包邮</div>
+					<div class="item_location">上海</div>
+				</div>
+				<div class="buy_zone_item">
+					<img src="img/iphone.jpg">
+					<div class="item_title">IphoneX</div>
+					<div class="item_price">￥4500</div>					
+					<div class="item_info">
+					&nbsp;&nbsp;3月份京东上苹果专营店购买，8成新，无损坏，包邮</div>
+					<div class="item_location">上海</div>
+				</div>
+			</div>
+			<!--sell zone分页-->
+			<div class="pagination wrap">
+				<div class="pagination_wrap">
+					<a href="#" class="firstPage">First</a>
+					<a href="#" class="prevPage"></a>
+
+					<span class="page-wrap">
+						<a href="#" class="page_item">1</a>
+						<a href="#" class="page_item">2</a>
+						<a href="#" class="page_item">3</a>
+					</span>
+				
+					<a href="#" class="nextPage"></a>
+					<a href="#" class="lastPage">Last</a>
+					<span class="goto">
+						<input type="text" class="page_number">
+						<input type="button" class="go_btn" value="Go">
+					</span>
+				</div>
+			</div>		
+		</div>
+	</div>
+
+	
+	<!--页脚-->
+	<div class="footer" id="footer">Copyright © 2018.5.31 2HandZone All rights reserved.</div>
+
+	<script src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/header.js"></script>
+	<script type="text/javascript" src="js/trading.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wechat business</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/wechatBusiness.css">
+</head>
+<body>
+	<!--top-->
+	<!-- <div class="top"></div> -->
+	<!--页头-->
+	<div class="header" id="header">
+		<!--logo-->
+		<a href="file:///D:/software/sublime/2handzone/2handzone.html" target="_blank"><img src="img/logo.png"></a>
+		<!--导航栏-->
+		<span class="li"><a href="file:///D:/software/sublime/2handzone/2handzone.html">首页</a></span>
+		<span class="li"><a href="file:///D:/software/sublime/2handzone/trading.html">跳蚤市场</a></span>
+		<span class="li"><a href="" class="header_focus">生活服务</a></span>
+		<span class="li"><a href="file:///D:/software/sublime/2handzone/post.html">发布闲置</a></span>
+		<!--登录注册按钮-->
+		<span class="regeLink links" id="regeLink"><a href="###">注册</a></span>
+		<span class="loginLink links" id="loginLink"><a href="###">登录</a></span>
+		<!--中英切换按钮-->
+		<span class="Ch links" id="Ch"><a href="###">中文</a></span>
+		<span class="space links" id="Ch"><a href="###">|</a></span>
+		<span class="Eng links" id="Eng"><a href="###">English</a></span>
+	</div>
+	
+	<!--登陆注册弹出层遮罩层-->
+	<div class="layer-mask" id="layer-mask"></div>
+	<!--弹出层窗体-->
+	<div class="layer-pop" id="layer-pop">
+		
+		<!--窗体关闭按钮-->
+		<a href="" class="layer-close">×</a>
+
+		<!--登陆弹出窗体-->
+		<div class="layer-content" id="layer-content"></div>
+
+		<!--登录窗体Html-->
+		<div class="loginHtml" id="loginHtml">
+			<h2>登 录</h2>
+
+			<div class="item">
+				<label>帐号</label>
+				<input type="text" name="account" class="input" id="account">
+			</div>
+			<div class="item">
+				<label>密码</label>
+				<input type="text" name="password" class="input" id="password">
+			</div>
+			<div class="item">
+				<label>&nbsp;</label>
+				<input type="submit" name="submit" class="submit" id="loginSubmitBtn" value="提交">
+			</div>
+			
+			<div class="notif">第三方帐号登录</div>
+				<div class="weibo"><img src="img/weibo.jpg"></div>
+				<div class="weixin"><img src="img/weixin.jpg"></div>
+				<div class="qq"><img src="img/qq.jpg"></div>
+		</div>
+
+		<!--注册窗体Html-->
+		<div class="regeHtml" id="regeHtml">
+			<h2>注 册</h2>
+
+			<div class="item">
+				<label>帐号</label>
+				<input type="text" name="account" class="input" id="account">
+			</div>
+			<div class="item">
+				<label>密码</label>
+				<input type="text" name="password" class="input" id="password">
+			</div>
+			<div class="item">
+				<label>确认密码</label>
+				<input type="text" name="password" class="input" id="password">
+			</div>
+			<div class="item">
+				<label>&nbsp;</label>
+				<input type="submit" name="submit" class="submit" id="loginSubmitBtn" value="填写好了">
+			</div>
+			<div class="notif">第三方帐号登录</div>
+				<div class="weibo"><img src="img/weibo.jpg"></div>
+				<div class="weixin"><img src="img/weixin.jpg"></div>
+				<div class="qq"><img src="img/qq.jpg"></div>
+		</div>
+
+	</div>
+
+	<!--主体-->
+	<div class="main">
+		<!--filter-->
+		<div class="filter wrap" id="filter">
+			<div class="group">
+				<span class="caption">type</span>
+				<a class="condition underline" href="#">agent</a>
+				<span href="condition1">|</span>
+				<a class="condition" href="#">clothes</a>
+				<span href="condition1">|</span>
+				<a class="condition" href="#">food</a>
+				<span href="condition1">|</span>
+				<a class="condition" href="#">service</a>
+			</div>
+
+			<div class="item group-agent">
+				<a class="item-condition underline" href="#">jobs</a>
+				<span href="condition1">|</span>
+				<a class="item-condition" href="#">scholarship</a>
+				<span href="condition1">|</span>
+				<a class="item-condition" href="#">house</a>
+				<span href="condition1">|</span>
+				<a class="item-condition" href="#">others</a>
+			</div>
+
+			<div class="item group-clothes hide">
+				<a class="item-condition underline" href="#">clothes</a>
+				<span href="condition1">|</span>
+				<a class="item-condition" href="#">shoes</a>
+				<span href="condition1">|</span>
+				<a class="item-condition" href="#">make up</a>
+			</div>
+
+			<div class="item group-food hide">
+				<a class="item-condition underline" href="#">snacks</a>
+				<span href="condition1">|</span>
+				<a class="item-condition" href="#">wine</a>
+				<span href="condition1">|</span>
+				<a class="item-condition" href="#">cooking</a>
+				<span href="condition1">|</span>
+				<a class="item-condition" href="#">others</a>
+			</div>
+
+			<div class="item group-service hide">
+				<a class="item-condition underline" href="#">all</a>
+			</div>
+		</div>
+
+		<!--微商列表-->
+		<div class="dataList wrap">
+			<div class="data-item">
+				<div class="item-pic">
+					<img src="img/wechat.jpg">
+				</div>
+				<div class="item-name" id="item-name">
+					<a href="#">WECHAT BUSINESS</a>
+				</div>
+				<div class="item-wechatId">
+					Wechat ID : a1396161523
+				</div>
+				<div class="item-number">
+					Phone Number : 13671504326
+				</div>
+				<div class="item-intro">
+					Introduction : Cool sports shoes...
+				</div>
+				<div class="save-button"></div>
+			</div>
+			<div class="data-item">
+				<div class="item-pic">
+					<img src="img/wechat.jpg">
+				</div>
+				<div class="item-name">
+					<a href="#">WECHAT BUSINESS</a>
+				</div>
+				<div class="item-wechatId">
+					Wechat ID : a1396161523
+				</div>
+				<div class="item-number">
+					Phone Number : 13671504326
+				</div>
+				<div class="item-intro">
+					Introduction : Cool sports shoes...
+				</div>
+				<div class="save-button"></div>
+			</div>
+			<div class="data-item">
+				<div class="item-pic">
+					<img src="img/wechat.jpg">
+				</div>
+				<div class="item-name">
+					<a href="#">WECHAT BUSINESS</a>
+				</div>
+				<div class="item-wechatId">
+					Wechat ID : a1396161523
+				</div>
+				<div class="item-number">
+					Phone Number : 13671504326
+				</div>
+				<div class="item-intro">
+					Introduction : Cool sports shoes...
+				</div>
+				<div class="save-button"></div>
+			</div>
+			<div class="data-item">
+				<div class="item-pic">
+					<img src="img/wechat.jpg">
+				</div>
+				<div class="item-name">
+					<a href="#">WECHAT BUSINESS</a>
+				</div>
+				<div class="item-wechatId">
+					Wechat ID : a1396161523
+				</div>
+				<div class="item-number">
+					Phone Number : 13671504326
+				</div>
+				<div class="item-intro">
+					Introduction : Cool sports shoes...
+				</div>
+				<div class="save-button"></div>
+			</div>
+		</div>
+
+		<!--微商列表分页-->
+		<div class="pagination wrap">
+			<div class="pagination_wrap">
+				<a href="#" class="firstPage">First</a>
+				<a href="#" class="prevPage"></a>
+
+				<span class="page-wrap">
+					<a href="#" class="page_item">1</a>
+					<a href="#" class="page_item">2</a>
+					<a href="#" class="page_item">3</a>
+					<a href="#" class="page_item">4</a>
+				</span>
+			
+				<a href="#" class="nextPage"></a>
+				<a href="#" class="lastPage">Last</a>
+				<span>10 Pages&nbsp;&nbsp;</span>
+				<span class="goto">
+					<input type="text" class="page_number">
+					<input type="button" class="go_btn" value="Go">
+				</span>
+			</div>
+		</div>
+
+	</div>
+
+	
+	<!--页脚-->
+	<div class="footer" id="footer">Copyright © 2018.5.31 2HandZone All rights reserved.</div>
+
+	<script src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/header.js"></script>
+	<script type="text/javascript" src="js/wechatBusiness.js"></script>
+</body>
+</html>

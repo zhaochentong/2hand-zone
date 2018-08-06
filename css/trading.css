@@ -1,0 +1,479 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	outline: none;
+}
+
+.main{
+	height: auto;
+}
+
+.button_content{
+	float: left;
+	width: 350px;
+	height: 100px;
+}
+
+.buy_sell_button{
+	position: relative;
+	width: 140px;
+	height: 60px;
+	border: 1px solid #ddd;
+	float: left;
+	margin-left: 15px;
+	padding-left: 5px;
+	padding-bottom: 2px;
+	transition: all .25s;
+	-webkit-transition: all .25s;
+}
+
+.buy_sell_button:hover{
+	cursor: pointer;
+}
+
+.big_letter{
+	font-size: 20px;
+	font-weight: 550;
+}
+
+.small_letter{
+	font-size: 12.8px;
+}
+
+.ani{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	background: #ddd;
+}
+
+.a, .b{
+	left: -1px;
+	top: -1px;
+	transition-property: width,height;
+	transition-duration: .26s,.26s;
+	transition-timing-function: ease-in;
+}
+
+.c, .d{
+	right: -1px;
+	bottom: -1px;
+	transition-property: width,height;
+	transition-duration: .26s,.26s;
+	transition-timing-function: ease-in;
+}
+
+.buy_sell_button:hover .a{
+	width: 147px;
+	background: #000;
+}
+
+.buy_sell_button:hover .b{
+	height: 64px;
+	background: #000;
+}
+
+.buy_sell_button:hover .c{
+	width: 147px;
+	background: #000;
+}
+
+.buy_sell_button:hover .d{
+	height: 64px;
+	background: #000;
+}
+
+.trading_search{
+	float: left;
+	width: 700px;
+	height: 38px;
+/*	background: #f00;*/
+	margin-left: 30px;
+}
+
+.trading_search input{
+	float: left;
+	width: 400px;
+	height: 36px;
+	font-size: 16px;
+	border: 1px solid #ddd;
+	background: #eee;
+	margin-top: 0;
+	padding-left: 5px;
+	transition: all .25s;
+}
+
+.trading_search input:hover{
+	background: #fff;
+	border: 1px solid #999;
+}
+
+.trading_search_btn{
+	float: left;
+	width: 100px;
+	height: 36px;
+	margin-left: 10px;
+	border: 1px solid #999;
+	margin-top: 0;
+	color: #999;
+	text-align: center;
+	line-height: 36px;
+	transition: all .25s;
+}
+
+.trading_search_btn:hover{
+	border: 1px solid #333;
+	color: #333;
+	cursor: pointer;
+}
+
+.nav{
+	width: 140px;
+	height: 231px;
+	float: left;
+	margin-left: 18px;
+	margin-top: 10px;
+	clear: both;
+}
+
+.nav .nav_item{
+	position: relative;
+	width: 140px;
+	height: 50px;
+	margin-top: -1px;
+	border: 1px solid #ddd;
+	text-align: center;
+	line-height: 50px;
+}
+
+.nav .nav_item a{
+	cursor: pointer;
+	font-size: 20px;
+	color: #555;
+}
+
+.nav .nav_item1{
+	/*background: #f00;*/
+}
+
+.nav .nav_item .bottom_line1{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	transition: all .25s;
+	-webkit-transition: all .25s;
+}
+
+.nav .nav_item a:hover{
+	color: #000;
+}
+
+.nav .nav_item1,.nav_item2:hover{
+	cursor: pointer;
+}
+
+.nav .nav_item1:hover .bottom_line1{
+	width: 140px;
+	background: #000;
+}
+
+.nav .nav_item2:hover .bottom_line1{
+	width: 140px;
+	background: #000;
+}
+
+.nav .nav_item3:hover .bottom_line1{
+	width: 140px;
+	background: #000;
+}
+
+.nav .nav_item4:hover .bottom_line1{
+	width: 140px;
+	background: #000;
+}
+
+.nav .nav_item .bottom_line2{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	left: 0;
+	bottom: 0;
+	background: #fff;
+	transition-property: height;
+	transition-duration: .25s;
+	/*transition-delay: .25s;*/
+}
+
+.nav .nav_item1:hover .bottom_line2{
+	height: 50px;
+	background: #000;
+}
+
+.nav .nav_item2:hover .bottom_line2{
+	height: 50px;
+	background: #000;
+}
+
+.nav .nav_item3:hover .bottom_line2{
+	height: 50px;
+	background: #000;
+}
+
+.nav .nav_item4:hover .bottom_line2{
+	height: 50px;
+	background: #000;
+}
+
+.nav .nav_item .bottom_line3{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	left: 0;
+	top: 0;
+	background: #fff;
+	transition-property: width;
+	transition-duration: .25s;
+	/*transition-delay: .5s;*/
+}
+
+.nav .nav_item1:hover .bottom_line3{
+	width: 140px;
+	background: #000;
+}
+
+.nav .nav_item2:hover .bottom_line3{
+	width: 140px;
+	background: #000;
+}
+
+.nav .nav_item3:hover .bottom_line3{
+	width: 140px;
+	background: #000;
+}
+
+.nav .nav_item4:hover .bottom_line3{
+	width: 140px;
+	background: #000;
+}
+
+.nav .nav_item .bottom_line4{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	right: 0;
+	top: 0;
+	background: #fff;
+	transition-property: height;
+	transition-duration: .25s;
+	/*transition-delay: .75s;*/
+}
+
+.nav .nav_item1:hover .bottom_line4{
+	height: 50px;
+	background: #000;
+}
+
+.nav .nav_item2:hover .bottom_line4{
+	height: 50px;
+	background: #000;
+}
+
+.nav .nav_item3:hover .bottom_line4{
+	height: 50px;
+	background: #000;
+}
+
+.nav .nav_item4:hover .bottom_line4{
+	height: 50px;
+	background: #000;
+}
+
+.nav .nav_item .bottom_line5{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	left: 140px;
+	bottom: 0;
+	background: #fff;
+	transition-property: width;
+	transition-duration: .25s;
+	/*transition-delay: 1s;*/
+}
+
+.nav .nav_item1:hover .bottom_line5{
+	width: 500px;
+	background: #000;
+}
+
+.nav .nav_item2:hover .bottom_line5{
+	width: 500px;
+	background: #000;
+}
+
+.nav .nav_item3:hover .bottom_line5{
+	width: 500px;
+	background: #000;
+}
+
+.nav .nav_item4:hover .bottom_line5{
+	width: 500px;
+	background: #000;
+}
+
+.nav .nav_item .sub_nav_item{
+	position: absolute;
+	width: 500px;
+	height: 50px;
+	left: 140px;
+	top: 0;
+	/*background: #f00;*/
+	display: none;
+	transition: all .25s;
+	-webkit-transition: all .25s;
+}
+
+.nav .nav_item .sub_nav_item span{
+	float: left;
+}
+
+.nav .nav_item .sub_nav_item .main_text{
+	color: #000;
+	font-size: 18px;
+	margin-left: 25px;
+}
+
+.nav .nav_item .sub_nav_item .sub_text{
+	color: #999;
+	font-size: 14px;
+	text-decoration: underline;
+	margin-left: 16px;
+	cursor: pointer;
+}
+.nav .nav_item .sub_nav_item .sub_text:hover{
+	color: #000;
+}
+
+.buy_zone{
+	float: left;
+	width: 502px;
+	height: auto;
+	overflow: auto,hidden;
+	margin-top: 214px;
+	margin-left: 18px;
+	border: 1px solid #ddd;
+}
+
+.sell_zone{
+	float: left;
+	width: 502px;
+	height: auto;
+	margin-top: 15px;
+	margin-left: 15px;
+	border: 1px solid #ddd;
+	overflow: hidden;
+}
+
+.buy_zone_content,.sell_zone_content{
+	width: 472px;
+	height: auto;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.buy_zone_tag,.sell_zone_tag{
+	float: left;
+	margin-left: 210px;
+	margin-top: 15px;
+	margin-bottom: 16px;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+.more_tag{
+	float: right;
+	width: 80px;
+	height: 20px;
+	margin-top: 5px;
+	margin-bottom: 10px;	
+}
+
+.more_tag a{
+	color: #000;
+}
+
+.more_tag a:hover{
+	color: #777;
+	text-decoration: underline;
+}
+
+.buy_zone_item{
+	width:200px;
+	height: 245px;
+	float: left;
+	margin-left: 23px;
+	margin-bottom: 15px; 
+	border: 1px solid #ddd;
+}
+
+.buy_zone_item img{
+	width: 180px;
+	height: 140px;
+	margin-top: 10px;
+	margin-left: 14px;
+}
+
+.buy_zone_item img:hover{
+	cursor: pointer;
+}
+
+.buy_zone_item .item_title{
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+.buy_zone_item .item_title:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.buy_zone_item .item_price{
+	float: right;
+	margin-top: 5px;
+	margin-right: 20px;
+	margin-bottom: 5px;
+}
+
+.buy_zone_item .item_info{
+	clear: both;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-left: 3px;
+}
+
+.buy_zone_item .item_location{
+	font-size: 12px;
+	float: right;
+	margin-top: 5px;
+	margin-right: 3px;
+}
+
+.sell_zone .pagination{
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+.buy_zone .pagination{
+	margin-top: 83px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+
+
+
